@@ -1,0 +1,19 @@
+1. Find Jupyter's config folder
+jupyter --config-dir
+2. See if a config file exists
+dir "%USERPROFILE%\.jupyter"
+3. Open the config file (if it exists)
+notepad "%USERPROFILE%\.jupyter\jupyter_notebook_config.py"
+4. Force Jupyter to open in your current folder
+
+First go to your Bootcamp folder:
+
+cd /d "D:\AI\The Complete Python Bootcamp From Zero to Hero in Python\The-Complete-Python-Bootcamp-From-Zero-to-Hero-in-Python"
+
+Then run:
+
+jupyter notebook --notebook-dir="%CD%"
+
+If you want the quickest way to diagnose the issue, run only this command and paste the output:
+
+jupyter --config-dir
